@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 import json
 
-class MpkLodzTimetableScraper:
+class TimetableScraper:
     """
     A class to scrape timetable data from the MPK Łódź website.
     """
@@ -193,6 +193,6 @@ if __name__ == "__main__":
         "43": "1238",
         "45": "1221",
     }
-    scraper = MpkLodzTimetableScraper()
+    scraper = TimetableScraper()
     for line, line_id in tram_lines.items():
         scraper.process_tram_line(line, line_id)
